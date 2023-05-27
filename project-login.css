@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(
+    45deg,
+    rgba(53, 84, 207, 0.1),
+    rgba(6, 7, 62, 0.8),
+    rgba(171, 40, 40, 0.7)
+  );
+}
+.header {
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+}
+.container {
+  width: 100vw;
+  height: 90vh;
+  display: grid;
+  place-items: center;
+}
+h1 {
+  font-family: 'Italianno', cursive;
+  font-family: 'Rouge Script', cursive;
+  color: goldenrod;
+}
+.h10 {
+  color: goldenrod;
+  padding: 5px;
+  letter-spacing: 2px;
+  background: gold;
+}
+.login {
+  width: 270px;
+  height: 350px;
+  background: rgb(225, 207, 207);
+  place-self: center;
+  box-shadow: 5px 5px 8px black;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+}
+.form {
+  margin-top: 0px;
+  position: relative;
+}
+.form input {
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  padding-left: 20px;
+}
+.form ::placeholder {
+  font-size: 0.85rem;
+  padding-left: 2px;
+}
+.s1 {
+  position: absolute;
+  top: 20px;
+  left: 2px;
+  font-size: 11px;
+}
+.s2 {
+  position: absolute;
+  top: 80px;
+  left: 2px;
+  font-size: 11px;
+}
+.btn {
+  position: relative;
+  border: none;
+  background: none;
+}
+.hide {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  font-size: 12px;
+  display: none;
+}
+.show {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  font-size: 12px;
+}
+.forgot {
+  margin-left: 80px;
+}
+.forgot a {
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+}
+.forgot a:hover {
+  color: goldenrod;
+}
+.login-btn {
+  width: 185px;
+  height: 20px;
+  border-radius: 5px;
+  border: none;
+  background: goldenrod;
+}
+.login-btn:hover {
+  background: linear-gradient(
+    45deg,
+    rgba(53, 84, 207, 0.1),
+    rgba(6, 7, 62, 0.8),
+    rgba(171, 40, 40, 0.7)
+  );
+}
+.sign-in {
+  margin-left: 70px;
+}
+.sign-in a {
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+}
+.sign-in a:hover {
+  color: goldenrod;
+}
+.sites {
+  margin-left: 60px;
+}
+.sites a {
+  text-decoration: none;
+  color: black;
+}
+.sites a:hover {
+  color: goldenrod;
+}

@@ -1,0 +1,673 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --mycolor1: rgb(137, 22, 114);
+  --mycolor2: rgb(17, 149, 202);
+  --mycolor3: rgb(240, 240, 238);
+  --mycolor4: rgba(137, 122, 22, 0.5);
+  --mytransition: all 0.25s linear;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('./images/back1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background: white;
+  height: 50px;
+  position: fixed;
+  z-index: 1;
+  font-size: 1.5rem;
+}
+.s1 {
+  color: var(--mycolor2);
+  padding-left: 150px;
+}
+.left {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  display: flex;
+  font-size: 1.5rem;
+}
+.right {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.list-items {
+  display: flex;
+  margin-top: 10px;
+}
+.list-items li {
+  list-style: none;
+  margin-left: 8px;
+}
+.list-items li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.right a {
+  color: var(--mycolor2);
+  text-decoration: none;
+}
+.right-2 {
+  display: none;
+}
+.nav a:hover {
+  color: var(--mycolor1);
+}
+.main-center {
+  position: absolute;
+  top: auto;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: whitesmoke;
+  text-transform: uppercase;
+  padding-top: 70px;
+}
+.main-center a {
+  padding: 3px 20px;
+  text-decoration: none;
+  color: var(--mycolor1);
+  background: whitesmoke;
+}
+.main-center a:hover {
+  background: none;
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
+}
+.section {
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.section h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.div2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.div2-1 {
+  width: 380px;
+  height: 380px;
+  margin-top: 50px;
+  position: relative;
+}
+.div2-1::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 4px solid var(--mycolor2);
+  left: -15px;
+  top: -15px;
+  z-index: -1;
+}
+.image-2 {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.div2-2 {
+  width: 600px;
+  margin-left: 50px;
+}
+.div2 .hx {
+  font-family: 'Rouge Script', cursive;
+  text-transform: uppercase;
+}
+.div2 p {
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+.section span:not(.s3, .s4, .div3-1-1 span) {
+  color: var(--mycolor2);
+}
+.div2-2 button {
+  width: 150px;
+  height: 30px;
+  border: none;
+  background: var(--mycolor2);
+  font-size: 1.2rem;
+}
+.div2-2 a {
+  text-decoration: none;
+  color: black;
+}
+.div2-2 button:hover {
+  color: var(--mycolor2);
+  background: none;
+  border: 2px solid var(--mycolor1);
+}
+.div-main {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.div3 {
+  width: 80%;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  place-items: center;
+  gap: 40px 10px;
+}
+.div3-1 {
+  width: 350px;
+  box-shadow: 2px 2px gray;
+  background: var(--mycolor3);
+  height: 390px;
+  transition: var(--mytransition);
+}
+.div3-1-1 {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+.div3-1-1 span {
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  color: black;
+  padding: 2px 10px;
+  background: var(--mycolor2);
+}
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+.div3-1-2 {
+  position: relative;
+  width: 100%;
+  font-size: 1.2rem;
+}
+.s1 {
+  position: absolute;
+  left: -15px;
+}
+.s2 {
+  position: absolute;
+  right: 15px;
+}
+.div3-1:hover {
+  transform: scale(1.07);
+}
+.div-main button {
+  margin-top: 30px;
+  width: 150px;
+  height: 30px;
+  background: var(--mycolor2);
+  border: none;
+  font-size: 1.2rem;
+}
+.div-main button a {
+  text-decoration: none;
+  color: black;
+}
+.div-main button:hover {
+  background: none;
+  border: 2px solid var(--mycolor2);
+}
+.div4 {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.div4-1 {
+  width: 550px;
+  position: relative;
+  background: rgb(255, 255, 255);
+  font-size: 1.2rem;
+}
+.div4-1-1 img {
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.s3 {
+  position: absolute;
+  top: 5px;
+  font-size: 1.5rem;
+  color: var(--mycolor1);
+  left: 40%;
+}
+#Contact-Us {
+  height: 70vh;
+  background: var(--mycolor3);
+  font-size: 1.2rem;
+}
+.div-stars {
+  color: goldenrod;
+}
+.form {
+  text-align: left;
+  margin: 20px;
+}
+.form input {
+  width: 50%;
+  outline: none;
+  padding-left: 10px;
+  background: none;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.form textarea {
+  width: 50%;
+}
+.form button {
+  width: 100px;
+  background: var(--mycolor2);
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+.footer {
+  width: 100%;
+  height: 30vh;
+  background: black;
+  color: whitesmoke;
+  display: grid;
+  text-align: center;
+  place-items: center;
+}
+.div-f-1 {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.x {
+  margin-left: 10px;
+}
+.top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: var(--mycolor2);
+  padding: 0.5px;
+  animation: animate 0.5s infinite;
+  display: none;
+}
+@keyframes animate {
+  10% {
+    transform: scale(0.2);
+  }
+  25% {
+    transform: scale(0.6);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+.show {
+  display: inline !important;
+}
+@media screen and (max-width: 850px) {
+  .nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: white;
+    height: 60px;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .s1 {
+    color: var(--mycolor2);
+    padding-left: 100px;
+    font-size: 1.2rem !important;
+  }
+  .left {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    display: flex;
+    font-size: 1.2rem;
+  }
+  .right {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+  .center {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    background: whitesmoke;
+    display: none;
+    transition: var(--mytransition);
+  }
+  .list-items {
+    display: inline;
+  }
+  .list-items li {
+    list-style: none;
+    margin-left: 8px;
+  }
+  .list-items li a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+  .right-1 {
+    position: absolute;
+    top: 42px;
+    right: 0;
+    display: flex;
+    display: none;
+  }
+  .right-2 {
+    position: absolute;
+    right: -10px;
+    top: 0px;
+    display: inline;
+  }
+  .right-2 button {
+    color: var(--mycolor2);
+    padding: 2px;
+  }
+  .right a {
+    color: var(--mycolor2);
+    text-decoration: none;
+  }
+  .nav a:hover {
+    color: var(--mycolor1);
+  }
+  .main-center {
+    position: absolute;
+    top: 156px;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: whitesmoke;
+    text-transform: uppercase;
+    padding-top: 70px;
+  }
+  .main-center h1 {
+    font-size: 1.5rem;
+  }
+  .main-center a {
+    padding: 3px 20px;
+    text-decoration: none;
+    color: var(--mycolor1);
+    background: whitesmoke;
+  }
+  .main-center a:hover {
+    background: none;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+  }
+  .section {
+    width: 100%;
+    text-align: center;
+  }
+  .section h1 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+  }
+  .div2 {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+  }
+  .div2-1 {
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    position: relative;
+  }
+  .div2-1::before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 3px solid var(--mycolor2);
+    left: 8px;
+    top: -12px;
+    z-index: -1;
+  }
+  .image-2 {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+  }
+  .div2-2 {
+    width: 450px;
+    margin-left: 20px;
+  }
+  .div2 .hx {
+    font-family: 'Rouge Script', cursive;
+    text-transform: uppercase;
+  }
+  .div2 p {
+    letter-spacing: 1px;
+    font-size: 1rem !important;
+  }
+  .section span:not(.s3, .s4, .div3-1-1 span, .s1, .s2, .w) {
+    color: var(--mycolor2);
+    font-size: 1.6rem !important;
+  }
+  .div2-2 button {
+    width: 100px;
+    height: 25px;
+    border: none;
+    background: var(--mycolor2);
+  }
+  .div2-2 a {
+    text-decoration: none;
+    color: black;
+  }
+  .div2-2 button:hover {
+    color: var(--mycolor2);
+    background: none;
+    border: 2px solid var(--mycolor1);
+  }
+  .div-main {
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .div3 {
+    width: 60%;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px 10px;
+  }
+  .div3-1 {
+    width: 200px;
+    box-shadow: 2px 2px gray;
+    background: var(--mycolor3);
+    height: 320px;
+    transition: var(--mytransition);
+  }
+  .div3-1 p,
+  span,
+  .s1,
+  .s2 {
+    font-size: 0.85rem;
+  }
+  .div3-1-1 {
+    position: relative;
+    width: 100%;
+    height: 50%;
+  }
+  .div3-1-1 span {
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    color: black;
+    padding: 2px 10px;
+    background: var(--mycolor2);
+  }
+  .image {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+  }
+  .div3-1-2 {
+    position: relative;
+    width: 100%;
+  }
+  .s1 {
+    position: absolute;
+    left: 20px;
+  }
+  .s2 {
+    position: absolute;
+    right: 80px;
+  }
+  .div3-1:hover {
+    transform: scale(1.05);
+  }
+  .div-main button {
+    margin-top: 20px;
+    width: 100px;
+    height: 25px;
+    background: var(--mycolor2);
+    border: none;
+  }
+  .div-main button a {
+    text-decoration: none;
+    color: black;
+  }
+  .div-main button:hover {
+    background: none;
+    border: 2px solid var(--mycolor2);
+  }
+  .div4 {
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .div4-1 {
+    width: 400px;
+    position: relative;
+    background: rgb(255, 255, 255);
+  }
+  .div4-1-1 img {
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 60px;
+    height: 60px;
+  }
+  .div4-1 p {
+    font-size: 1rem;
+  }
+  .s3 {
+    position: absolute;
+    top: 5px;
+    font-size: 1.1rem;
+    color: var(--mycolor1);
+    left: 40%;
+  }
+  .div-stars {
+    color: goldenrod;
+  }
+  #Contact-Us {
+    font-size: 1.2rem !important;
+  }
+  .div5 {
+    width: 100%;
+    text-align: center;
+  }
+  .div5-1 {
+    font-size: 1rem;
+  }
+  .div5-1 .w {
+    font-size: 0.7rem !important;
+  }
+  .div .form {
+    text-align: left;
+    margin: 20px;
+  }
+  .form input {
+    width: 50%;
+    outline: none;
+    padding-left: 10px;
+    background: none;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  .form textarea {
+    width: 50%;
+  }
+  .form button {
+    width: 100px;
+    height: 25px;
+    background: var(--mycolor2);
+    color: black;
+    border: none;
+    border-radius: 5px;
+  }
+  .footer {
+    width: 100%;
+    height: 30vh;
+    background: black;
+    color: whitesmoke;
+    display: grid;
+    text-align: center;
+    place-items: center;
+  }
+  .footer h1 {
+    font-size: 1.1rem;
+  }
+  .div-f-1 {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+  .x {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .div3 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr;
+  }
+  .div2-2 {
+    width: 350px;
+    margin-left: 20px;
+  }
+  .div2-2 p {
+    font-size: 0.85rem !important;
+  }
+}
